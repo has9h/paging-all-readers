@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Paging All Readers </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel= "stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+    
+    <body>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <img src="https://img.freepik.com/free-icon/open-book-top-view_318-58980.jpg?size=338c&ext=jpg" align="left" width="45" height="45">
+                    <a class="navbar-brand" href="#"> Paging All Readers </a>
+                </div>
+                <ul class="nav navbar-nav navbar-right">
+                    <!--<li class="active"><a href="#">Home</a></li>-->
+                    <li><button id="showCartBtn" type="button" class="btn btn-lg"><span class="glyphicon glyphicon-shopping-cart" align= right></span> Cart</a></li>
+                </ul>
+            </div>
+        </nav>
+            
+        <div class= "container text-center" style="background-color: #B0C4DE">
+            <h3 style="font-size: 35px; font-weight: bold"> Welcome To Paging All Readers </h3>
+            <h3 style="font-size: 35px"> An online bookstore</h3>
+            <p style="font-size: 15px">Paging All Readers is a small online bookstore. As the world is becoming more digitalized, more and more people prefer reading books on devices rather than actual books. For many people it is more convenient to read books on a device as they are always on the go. As we have just opened, our collection is still small but as we are growing, we are continuously adding new books.</p>
+        </div>
+       
+    <div class= "container text-center" style="background-color: #B0C4DE">
+        <h3 style="font-size: 35px">Available Books</h3>
+        <!--Book section-->
+        <div id= "book" class= "container text-center">
+            <!--<button id="showCartBtn" class="btn btn-success btn-lg">Cart</button>-->
+            <hr class= "my-4">
+            <div id= "book-items" class="row">
+            </div>
+            <hr class= "my-4">
+        </div>
+  
+        <!--Cart section-->
+        <div id= "cart" class= "container text-center">
+            <h2>Cart</h2>
+            <!--<button id= "hideCartBtn" class="btn btn-dark btn-md" style= "font-size: large">Close</button>-->
+            <hr class="my-4">
+            <div id="cart-row" class= "row">
+            </div>
+            <hr class="my-4">
+             <h3 style= "font-weight: bold">Total: $ <span id="total"></span></h3>
+             <button id="checkoutbtn" class="btn btn-success btn-lg" onclick="location.href='https://online-library-has9.c9users.io/checkout.html'">CONTINUE TO CHECKOUT</button>
+              <button id= "hideCartBtn" class="btn btn-dark btn-lg">CLOSE</button>
+           <hr class= "my-4">
+        </div>
+    </div>
+            
+   
+        <script src= "jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>
